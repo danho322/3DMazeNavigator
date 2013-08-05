@@ -1,0 +1,68 @@
+Maze Bot 
+
+You are a hover bot that needs to find the quickest 
+way out of a 3D maze! You can think of the maze as a
+box made up of unit cubes where each cube is either
+transparent or solid. You can move in any of these
+6 directions: north, south, east, west, up, down. Each
+move is considered to take exactly one cube and you
+can move only through transparent cubes. (You cannot
+move through the boundaries of the maze, nor
+through solid cubes). A* is not required for this problem.
+You may focus more on solving it than optimizing it.
+
+INPUT FORMAT 
+
+The input file begins with a line of text designating the 
+height of the box measured in cubes. It then
+describes each layer individually that make up the box
+starting from bottom to top. Each layer must
+be the same width and height. Let's assume that "#"
+designates a solid cube and "." a transparent one.
+Also, "B" marks your beginning cell and "E" marks the
+end cell. Note that B and E may be in any one of
+the layers. Also, assume B and E can be treated as
+transparent cubes.
+
+OUTPUT FORMAT 
+
+The output format should ouput either "Not Escapable" 
+or "Escapable: " followed by the exact steps the Bot
+took to get out of the maze. Please shorten the
+direction names to be N,S,E,W,U,D. Also, make sure
+the bot finds the solution in the shortest path
+possible!
+
+SAMPLE INPUT 
+
+
+3 
+B####
+.####
+.####
+.....
+
+#..#. 
+#..#.
+#..#.
+####.
+
+..#.E 
+..#..
+..#..
+.....
+
+The sample input can be a file or a string of text in your php/java file that we can change to test our own levels. 
+
+SAMPLE OUTPUT 
+
+Escapable: SSSEEEEUNNNU 
+
+
+Some further thoughts to include:
+ 
+(This can be in the form of just writing, we can talk about this on the phone, or during the implementation, if you can find a way to do this without too much work, you can choose to squeeze it in)
+
+Extra: Have the ability to input another Bot, called "A" in the sample input, at a different location. Both bots must make it to the exit without colliding with each other in the shortest amount of total moves possible. Explain(don't implement) how your solution can scale up to more bots and a bigger maze while maintaining the criteria of shortest total moves possible?
+
+Extra 2: Show a visualization of the bot moving(text based visual output is fine)
